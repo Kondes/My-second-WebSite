@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+body {
+  color: #505050;
+}
+li {
+  list-style-type: none;
+}

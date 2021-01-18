@@ -1,0 +1,70 @@
+.header__top {
+  background-image: url('../image/header/wino.jpg');
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  &-inner {
+    border: 2px solid #8c001a;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.header__title {
+  font-weight: bold;
+  font-size: 162px;
+  line-height: 184px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  //   margin: auto;
+  margin-left: 235px;
+}
+.header__text {
+  font-size: 24px;
+  line-height: 27px;
+  color: #ffffff;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  margin-bottom: -12px;
+  &::after,
+  &::before {
+    content: '';
+    border-top: 2px solid #8c001a;
+    width: 100%;
+  }
+  &::after {
+    margin-left: 30px;
+  }
+  &::before {
+    margin-right: 30px;
+  }
+}
+.menu {
+  //   border: 1px solid rgba(208, 212, 216, 0.5);
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    &-link {
+      padding: 40px 10px 20px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      color: #909090;
+      margin: 0 5px;
+      border-bottom: 4px solid transparent;
+      transition: all .8s;
+    }
+    &-link:hover {
+      border-bottom: 4px solid #8c001a;
+    }
+  }
+}
